@@ -70,7 +70,7 @@ const ArrivalSection = () => {
                 totalRating="(121)"
               />
               <ArrivalBox
-                loveIcon={true}
+                loveIcon={false}
                 arrivalItemName="Xiphone 13"
                 arrivalItemPrice="100.00"
                 paraText={
