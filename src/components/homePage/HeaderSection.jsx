@@ -25,7 +25,7 @@ const HeaderSection = () => {
 
             {/* Login  */}
             <div>
-                <div className='flex items-center justify-center gap-6'>
+                <div className='flex items-center gap-6'>
                     <button className='font-["Montserrat"]  text-[13px] font-semibold text-[#8E8E8E] p-4 leading-[130%] cursor-pointer space-y-10'>LOGIN</button>
                     <Button textbtn={"Sign Up Now"}/>
                 </div>
