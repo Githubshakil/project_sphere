@@ -1,5 +1,6 @@
 import ArrowLeft from "../../icons/ArrowLeft";
 import ArrowRight from "../../icons/ArrowRight";
+import ArrivalBox from "../commonLayOut/ArrivalBox";
 import ArrivalItems from "../commonLayOut/ArrivalItems";
 import Container from "../commonLayOut/Container";
 
@@ -8,7 +9,7 @@ const ArrivalSection = () => {
     <>
       <div className="mb-[100px]">
         <Container>
-          <div className="flex justify-between items-center mb-[48px]">
+          <div className="flex justify-between items-center mb-[46px]">
             <div>
               <h2 className='text-left text-[#000] font-["Prompt"] text-[47px] font-bold leading-[125%] tracking-[-0.94px]'>
                 New <span className="text-[#5E1EE5]">arrival</span> for you
@@ -25,15 +26,19 @@ const ArrivalSection = () => {
           </div>
 
 
-          <div >
-            <div className="border-l border-[#E2E2E2] h-[308px]  relative before:content-[''] before:bg-[#5e1ee5] before:absolute before:w-[2px] before:h-[43px]  before:left-[0px] before:top-[70px]  "> 
-              <div className="absolute top-[17px] ">
-                <ArrivalItems arrivalText="Computer & Laptop" arrivalNumber="15" bg={"#1f2537"} />
-                <ArrivalItems arrivalText="Mobile & Phone" arrivalNumber="35" bg={"#AFE638"}/>
+          <div className=" flex items-center justify-between gap-[76px]">
+            <div className="  border-l border-[#E2E2E2] h-[308px]  relative before:content-[''] before:bg-[#5e1ee5] before:absolute before:w-[2px] before:h-[43px]  before:left-[0px] before:top-[70px]  "> 
+              <div className=" w-[250px] absolute top-[17px] ">
+                <ArrivalItems arrivalText="Computer & Laptop" arrivalNumber="15" bg={"#1f2537"}  />
+                <ArrivalItems arrivalText="Mobile & Phone" arrivalNumber="35" bg={"#AFE638"} color={"#000"}/>
                 <ArrivalItems arrivalText="Camera Imaging" arrivalNumber="10" bg={"#5E1EE5"}/>
-                <ArrivalItems arrivalText="TV & Smart Box" arrivalNumber="8" bg={"#F1F1F2"}/>
-                <ArrivalItems arrivalText="Home Appliance" arrivalNumber="2" bg={"#FFE921"}/>
+                <ArrivalItems arrivalText="TV & Smart Box" arrivalNumber="8" bg={"#F1F1F2"}  color={"#000"}/>
+                <ArrivalItems arrivalText="Home Appliance" arrivalNumber="2" bg={"#FFE921"} color={"#000"}/>
               </div>
+            </div>
+            <div className="flex items-center gap-[98px]">
+              <ArrivalBox loveIcon={true} />
+              <ArrivalBox />
             </div>
 
             
