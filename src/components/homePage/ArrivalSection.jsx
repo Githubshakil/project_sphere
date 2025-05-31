@@ -26,7 +26,7 @@ const ArrivalSection = () => {
 
 
           <div >
-            <div className="border-l border-[#E2E2E2] h-[308px] overflow-y-auto relative before:content-[''] before:bg-[#5e1ee5] before:absolute before:w-[2px] before:h-[43px]  before:left-[0px] before:top-[70px]  "> 
+            <div className="border-l border-[#E2E2E2] h-[308px]  relative before:content-[''] before:bg-[#5e1ee5] before:absolute before:w-[2px] before:h-[43px]  before:left-[0px] before:top-[70px]  "> 
               <div className="absolute top-[17px] ">
                 <ArrivalItems arrivalText="Computer & Laptop" arrivalNumber="15" bg={"#1f2537"} />
                 <ArrivalItems arrivalText="Mobile & Phone" arrivalNumber="35" bg={"#AFE638"}/>
@@ -35,6 +35,9 @@ const ArrivalSection = () => {
                 <ArrivalItems arrivalText="Home Appliance" arrivalNumber="2" bg={"#FFE921"}/>
               </div>
             </div>
+
+            
+
           </div>
         </Container>
       </div>
