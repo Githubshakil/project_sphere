@@ -18,7 +18,7 @@ const Button = ({
 
   return (
     <>
-    <button className='flex items-center gap-2.5 justify-center cursor-pointer transform' 
+    <button className='flex items-center gap-2.5 justify-center cursor-pointer transform hover:scale-105 transition-all duration-300 ease-in-out' 
     style={{
         backgroundColor: bg,
         fontFamily: fontName,
