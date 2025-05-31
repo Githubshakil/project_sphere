@@ -1,8 +1,11 @@
 import React from 'react'
+import HeaderSection from '../components/homePage/HeaderSection'
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <>
+        <HeaderSection />
+    </>
   )
 }
 
