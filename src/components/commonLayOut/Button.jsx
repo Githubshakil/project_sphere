@@ -5,12 +5,13 @@ const Button = ({
     textbtn,
     bg = "#000",
     fontName = "Montserrat",
-    fontWeight = "bold",
+    fontWeight = "500",
     size = "16px",
     color = "white",
     paddingY = 16,
     paddingX = 37,
     radius = 52,
+    
     
     }) => {
 
@@ -27,6 +28,8 @@ const Button = ({
         color: color,
         padding: `${paddingY}px ${paddingX}px`,
         borderRadius: `${radius}px`,
+        
+        
         
     }}
     >{textbtn}<ArrowDown />

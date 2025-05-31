@@ -3,7 +3,7 @@ import HeaderSection from '../components/homePage/HeaderSection'
 import BannerSection from '../components/homePage/BannerSection'
 import WeProvide from '../components/homePage/WeProvide'
 import ArrivalSection from '../components/homePage/ArrivalSection'
-
+import Event from '../components/homePage/Event'
 const HomePage = () => {
   return (
     <>
@@ -11,6 +11,7 @@ const HomePage = () => {
         <BannerSection />
         <WeProvide />
         <ArrivalSection />
+        <Event />
     </>
   )
 }
