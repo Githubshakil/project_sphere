@@ -1,7 +1,7 @@
 import React from 'react'
 import Container from '../commonLayOut/Container'
 import Button from '../commonLayOut/Button'
-import ArrowRight from '../../icons/ArrowRight'
+import ArrowRight from '../../icons/ArrowDown'
 
 const HeaderSection = () => {
   return (

@@ -1,5 +1,5 @@
-import React from 'react'
-import ArrowRight from '../../icons/ArrowRight';
+
+import ArrowDown from '../../icons/ArrowDown';
 
 const Button = ({
     textbtn,
@@ -29,7 +29,7 @@ const Button = ({
         borderRadius: `${radius}px`,
         
     }}
-    >{textbtn}<ArrowRight />
+    >{textbtn}<ArrowDown />
     </button>
     </>
   );
