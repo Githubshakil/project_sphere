@@ -10,7 +10,7 @@ const HeaderSection = () => {
         <div className='flex justify-between items-center py-[50px]   '>
             {/* logo */}
             <div className='flex items-center cursor-pointer justify-cente pb-1 '>
-                <img src="images/logo.png" alt="" />
+                <img src="/images/logo.png" alt="logo" />
             </div>
 
             {/* navbar */}
