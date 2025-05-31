@@ -1,13 +1,35 @@
 import React from 'react'
 import Container from '../commonLayOut/Container'
+import Button from '../commonLayOut/Button'
+import ArrowRight from '../../icons/ArrowRight'
 
 const HeaderSection = () => {
   return (
     <>
     <Container>
-        <div className='max-w-[1240px] mx-auto'>
-            <h1 className='text-3xl font-bold'>Header Section</h1>
-            <p className='text-lg mt-2'>This is the header section of the page.</p>
+        <div className='flex justify-between items-center '>
+            {/* logo */}
+            <div className='flex items-center cursor-pointer mt-[55px] mb-[56px] '>
+                <img src="images/logo.png" alt="logo" />
+            </div>
+
+            {/* navbar */}
+            <div className='flex items-center justify-center '>
+                <ul className='flex gap-[25px] font-["Montserrat"]  text-[13px] font-semibold text-[#8E8E8E] uppercase pt-[51px] pb-[56px]'>
+                   <li className='p-4 leading-[130%] cursor-pointer'>Home</li>
+                   <li  className='p-4 leading-[130%] cursor-pointer'>Pricing</li>
+                   <li  className='p-4 leading-[130%] cursor-pointer'>Events</li>
+                   <li  className='p-4 leading-[130%] cursor-pointer'>Company</li>
+                </ul>
+            </div>
+
+            {/* Login  */}
+            <div>
+                <div className='flex items-center justify-center gap-6'>
+                    <button className='font-["Montserrat"]  text-[13px] font-semibold text-[#8E8E8E] p-4 leading-[130%] cursor-pointer space-y-10'>LOGIN</button>
+                    <Button textbtn={"Sign Up Now"}/>
+                </div>
+            </div>
         </div>
     </Container>
        
