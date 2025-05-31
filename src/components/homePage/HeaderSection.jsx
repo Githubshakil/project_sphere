@@ -7,15 +7,15 @@ const HeaderSection = () => {
   return (
     <>
     <Container>
-        <div className='flex justify-between items-center '>
+        <div className='flex justify-between items-center py-[50px]   '>
             {/* logo */}
-            <div className='flex items-center cursor-pointer mt-[55px] mb-[56px] '>
+            <div className='flex items-center cursor-pointer justify-cente pb-1 '>
                 <img src="images/logo.png" alt="logo" />
             </div>
 
             {/* navbar */}
             <div className='flex items-center justify-center '>
-                <ul className='flex gap-[25px] font-["Montserrat"]  text-[13px] font-semibold text-[#8E8E8E] uppercase pt-[51px] pb-[56px]'>
+                <ul className='flex gap-[25px] font-["Montserrat"]  text-[13px] font-semibold text-[#8E8E8E] uppercase '>
                    <li className='p-4 leading-[130%] cursor-pointer'>Home</li>
                    <li  className='p-4 leading-[130%] cursor-pointer'>Pricing</li>
                    <li  className='p-4 leading-[130%] cursor-pointer'>Events</li>
