@@ -7,6 +7,23 @@ import Container from "../commonLayOut/Container";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+
+function NextRightArrow(props){
+  return(
+    <div onClick={props.onClick} className={` absolute -top-[100px] right-0 flex items-center justify-center w-[55px] h-[55px] rounded-full border border-[#000] hover:bg-[#AFE638] hover:border-[#AFE638] transition-all duration-300 cursor-pointer `}>
+                <ArrowRight />
+              </div>
+  )
+}
+function PrevNextArrow(props){
+  return(
+   <div onClick={props.onClick} className=" absolute -top-[100px] right-20 flex items-center justify-center w-[55px] h-[55px] rounded-full border border-[#000] hover:bg-[#AFE638] hover:border-[#AFE638] transition-all duration-300 cursor-pointer ">
+                <ArrowLeft />
+              </div>
+  )
+}
+
+
 const ArrivalSection = () => {
   var settings = {
     dots: false,
@@ -14,8 +31,8 @@ const ArrivalSection = () => {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
-    nextArrow: <ArrowRight />,
-    prevArrow: <ArrowLeft />,
+    nextArrow: <NextRightArrow/>,
+    prevArrow: <PrevNextArrow />,
     autoplay: true,
     autoplaySpeed: 2500,
   };
@@ -29,20 +46,14 @@ const ArrivalSection = () => {
                 New <span className="text-[#5E1EE5]">arrival</span> for you
               </h2>
             </div>
-            <div className="flex items-center gap-[24px]">
-              <div className=" flex items-center justify-center w-[55px] h-[55px] rounded-full border border-[#000] hover:bg-[#AFE638] transition-all duration-300 cursor-pointer ">
-                <ArrowLeft />
-              </div>
-              <div className=" flex items-center justify-center w-[55px] h-[55px] rounded-full border border-[#000] hover:bg-[#AFE638] transition-all duration-300 cursor-pointer ">
-                <ArrowRight />
-              </div>
-            </div>
+            
           </div>
 
           <div className=" flex justify-between  gap-[76px]">
             <div className=" mt-8 border-l border-[#E2E2E2] h-[308px]  relative before:content-[''] before:bg-[#5e1ee5] before:absolute before:w-[2px] before:h-[43px]  before:left-[0px] before:top-[70px]">
               <div className=" w-[250px] absolute top-[17px] ">
-                <ArrivalItems
+                
+                  <ArrivalItems
                   arrivalText="Computer & Laptop"
                   arrivalNumber="15"
                   bg={"#1f2537"}
@@ -70,11 +81,13 @@ const ArrivalSection = () => {
                   bg={"#FFE921"}
                   color={"#000"}
                 />
+                
               </div>
             </div>
 
-            <div className="gap-[98px] flex items-center">
-              <ArrivalBox
+            <div className="w-[920px] ">
+              <Slider {...settings} >
+                <ArrivalBox
                 loveIcon={true}
                 arrivalItemName="Xiphone 14 Pro Maxe"
                 arrivalItemPrice="175.00"
@@ -83,6 +96,7 @@ const ArrivalSection = () => {
                 }
                 rating="5"
                 totalRating="(121)"
+                className={"mx-1 ml-[49px] my-0.5"}
               />
               <ArrivalBox
                 loveIcon={false}
@@ -93,7 +107,9 @@ const ArrivalSection = () => {
                 }
                 rating="5"
                 totalRating="(89)"
+                className={"ml-[49px] mx-1 my-0.5"}
               />
+              </Slider>
             </div>
           </div>
         </Container>
