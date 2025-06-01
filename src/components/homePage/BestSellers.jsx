@@ -31,7 +31,7 @@ const BestSellers = () => {
           </div>
         </div>
 
-        <div className="w-[1240px] mx-auto">
+        <div className="w-[1300px] mx-auto">
           <Slider {...settings} >
             <ArrivalBox
                 loveIcon={false}
