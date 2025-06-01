@@ -4,8 +4,10 @@ import Container from '../commonLayOut/Container'
 const BannerSection = () => {
   return (
     <>
-    <div className='max-w-[1440px] mx-auto  '>
-        <img src="/images/banner.png" alt="Banner" />
+    <div className=' bg-[#f3f4f6] '>
+        <Container>
+          <img src="/images/banner.png" alt="Banner" className='ml-[100px]'/>
+        </Container>
     </div>
    
     </>
