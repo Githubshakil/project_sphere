@@ -34,7 +34,7 @@ const ArrivalBox = ({
             </div>
           </div>
         )}
-        <div className={` ${boxHeight ? "h-[267px]" : "h-[232px]"} bg-[#d9d9d9]`}></div>
+        <div className={` ${boxHeight ? "h-[232px]": "h-[267px]"} bg-[#d9d9d9]`}></div>
         {loveIcon && (
           <div className={`w-[49px] h-[49px] bg-[#000] rounded-full absolute top-[28px] ${extraRight ? "right-[30px]" : "right-[80px]"} flex items-center justify-center`}>
             <HartShape />

@@ -46,6 +46,7 @@ const BestSellers = () => {
               bestprice={"89.000"}
               delPrice={"150.00"}
               bestSellprice={true}
+              boxHeight={true}
              
             />
             <ArrivalBox
@@ -62,6 +63,7 @@ const BestSellers = () => {
               bestprice={"89.000"}
               delPrice={"150.00"}
               bestSellprice={true}
+              boxHeight={true}
               
             />
             <ArrivalBox
@@ -78,6 +80,7 @@ const BestSellers = () => {
               bestprice={"90.000"}
               delPrice={"250.00"}
               bestSellprice={true}
+              boxHeight={true}
               
             />
             
