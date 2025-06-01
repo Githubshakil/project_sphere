@@ -7,7 +7,7 @@ const GatwaySearch = () => {
   return (
     <div>
         <Container>
-            <div className='w-[1237px] bg-[#212736]  rounded-[15px] pt-[62px] pl-[73px] pr-[51px] pb-[77px] flex gap-[49px]  items-center'>
+            <div className='w-[1237px] bg-[#212736]  rounded-[15px] pt-[62px] pl-[73px] pr-[51px] pb-[77px] flex gap-[49px] items-center mb-[78px]'>
                 <div>
                     <h4 className='w-[410px] text-[#fff] font-["Prompt] text-[46px] font-bold leading-[120%] tracking-[-0.92px]'>Gateway to a world of innovation with</h4>
                     <div className='mt-[17px] flex justify-between items-center'>
