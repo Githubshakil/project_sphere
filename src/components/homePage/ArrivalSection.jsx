@@ -1,10 +1,24 @@
+import Slider from "react-slick";
 import ArrowLeft from "../../icons/ArrowLeft";
 import ArrowRight from "../../icons/ArrowRight";
 import ArrivalBox from "../commonLayOut/ArrivalBox";
 import ArrivalItems from "../commonLayOut/ArrivalItems";
 import Container from "../commonLayOut/Container";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const ArrivalSection = () => {
+  var settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    nextArrow: <ArrowRight />,
+    prevArrow: <ArrowLeft />,
+    autoplay: true,
+    autoplaySpeed: 2500,
+  };
   return (
     <>
       <div className="mb-[84px]">
@@ -26,7 +40,7 @@ const ArrivalSection = () => {
           </div>
 
           <div className=" flex justify-between  gap-[76px]">
-            <div className=" mt-8 border-l border-[#E2E2E2] h-[308px]  relative before:content-[''] before:bg-[#5e1ee5] before:absolute before:w-[2px] before:h-[43px]  before:left-[0px] before:top-[70px]  ">
+            <div className=" mt-8 border-l border-[#E2E2E2] h-[308px]  relative before:content-[''] before:bg-[#5e1ee5] before:absolute before:w-[2px] before:h-[43px]  before:left-[0px] before:top-[70px]">
               <div className=" w-[250px] absolute top-[17px] ">
                 <ArrivalItems
                   arrivalText="Computer & Laptop"
@@ -58,7 +72,8 @@ const ArrivalSection = () => {
                 />
               </div>
             </div>
-            <div className="flex items-center gap-[98px]">
+
+            <div className="gap-[98px] flex items-center">
               <ArrivalBox
                 loveIcon={true}
                 arrivalItemName="Xiphone 14 Pro Maxe"
