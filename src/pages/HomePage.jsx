@@ -4,6 +4,7 @@ import BannerSection from '../components/homePage/BannerSection'
 import WeProvide from '../components/homePage/WeProvide'
 import ArrivalSection from '../components/homePage/ArrivalSection'
 import Event from '../components/homePage/Event'
+import BestSellers from '../components/homePage/BestSellers'
 const HomePage = () => {
   return (
     <>
@@ -12,6 +13,7 @@ const HomePage = () => {
         <WeProvide />
         <ArrivalSection />
         <Event />
+        <BestSellers />
     </>
   )
 }
