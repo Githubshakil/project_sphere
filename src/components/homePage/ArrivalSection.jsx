@@ -33,7 +33,7 @@ const ArrivalSection = () => {
     slidesToScroll: 1,
     nextArrow: <NextRightArrow/>,
     prevArrow: <PrevNextArrow />,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2500,
   };
   return (
@@ -90,6 +90,7 @@ const ArrivalSection = () => {
                 <ArrivalBox
                 loveIcon={true}
                 arrivalItemName="Xiphone 14 Pro Maxe"
+                itemPrice={true}
                 arrivalItemPrice="175.00"
                 paraText={
                   "Lorem ipsum dolor sit amet consectetur. Eleifend nec morbi tellus vitae leo nunc."
@@ -99,8 +100,9 @@ const ArrivalSection = () => {
                 className={"mx-1 ml-[49px] my-0.5"}
               />
               <ArrivalBox
-                loveIcon={false}
+                loveIcon={true}
                 arrivalItemName="Xiphone 13"
+                itemPrice={true}
                 arrivalItemPrice="100.00"
                 paraText={
                   "Lorem ipsum dolor sit amet consectetur. Eleifend nec morbi tellus vitae leo nunc."
@@ -108,6 +110,7 @@ const ArrivalSection = () => {
                 rating="5"
                 totalRating="(89)"
                 className={"ml-[49px] mx-1 my-0.5"}
+               
               />
               </Slider>
             </div>
