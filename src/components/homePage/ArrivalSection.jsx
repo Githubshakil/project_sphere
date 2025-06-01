@@ -89,6 +89,7 @@ const ArrivalSection = () => {
               <Slider {...settings} >
                 <ArrivalBox
                 loveIcon={true}
+                extraRight={true}
                 arrivalItemName="Xiphone 14 Pro Maxe"
                 itemPrice={true}
                 arrivalItemPrice="175.00"
