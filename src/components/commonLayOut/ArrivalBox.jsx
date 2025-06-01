@@ -21,7 +21,7 @@ const ArrivalBox = ({
 }) => {
   let [ratingValue, setRatingValue] = useState(new Array(+rating).fill(rating));
   return (
-    <div className={className}>
+    <div className={`${className} flex flex-col justify-center items-center`}>
       <div className="w-[410px] relative h-[404px] border-1 border-[#fff] rounded-[15px] drop-shadow-lg backdrop-blur-sm pt-[99px] pb-[38px] pl-[52px] pr-[56px] ">
         {percentTag && (
           <div

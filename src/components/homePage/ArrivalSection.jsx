@@ -50,8 +50,8 @@ const ArrivalSection = () => {
           </div>
 
           <div className=" flex justify-between  gap-[76px]">
-            <div className=" mt-8 border-l border-[#E2E2E2] h-[308px]  relative before:content-[''] before:bg-[#5e1ee5] before:absolute before:w-[2px] before:h-[43px]  before:left-[0px] before:top-[70px]">
-              <div className=" w-[250px] absolute top-[17px] ">
+            <div className="  mt-8 border-l border-[#E2E2E2] h-[308px]  relative before:content-[''] before:bg-[#5e1ee5] before:absolute before:w-[2px] before:h-[43px]  before:left-[0px] before:top-[70px]">
+              <div className=" w-[250px] absolute top-[17px]  ">
                 
                   <ArrivalItems
                   arrivalText="Computer & Laptop"
@@ -85,7 +85,7 @@ const ArrivalSection = () => {
               </div>
             </div>
 
-            <div className="w-[920px] ">
+            <div className="w-[940px]  ">
               <Slider {...settings} >
                 <ArrivalBox
                 loveIcon={true}
@@ -98,7 +98,7 @@ const ArrivalSection = () => {
                 }
                 rating="5"
                 totalRating="(121)"
-                className={"mx-1 ml-[49px] my-0.5"}
+                className={"mx-0  my-0.5"}
               />
               <ArrivalBox
                 loveIcon={true}
@@ -110,7 +110,7 @@ const ArrivalSection = () => {
                 }
                 rating="5"
                 totalRating="(89)"
-                className={"ml-[49px] mx-1 my-0.5"}
+                className={" mx-0 my-0.5"}
                
               />
               </Slider>
