@@ -33,7 +33,7 @@ const ArrivalSection = () => {
     slidesToScroll: 1,
     nextArrow: <NextRightArrow/>,
     prevArrow: <PrevNextArrow />,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2500,
   };
   return (
