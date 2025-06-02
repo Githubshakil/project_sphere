@@ -6,6 +6,7 @@ import ArrivalSection from '../components/homePage/ArrivalSection'
 import Event from '../components/homePage/Event'
 import BestSellers from '../components/homePage/BestSellers'
 import GatwaySearch from '../components/homePage/GatwaySearch'
+import Footer from '../components/homePage/Footer'
 const HomePage = () => {
   return (
     <>
@@ -16,6 +17,7 @@ const HomePage = () => {
         <Event />
         <BestSellers />
         <GatwaySearch />
+        <Footer />
     </>
   )
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import Container from '../commonLayOut/Container'
 import Button from '../commonLayOut/Button'
 import ArrowRight from '../../icons/ArrowDown'
+import { Link } from 'react-router-dom'
 
 const HeaderSection = () => {
   return (
@@ -10,7 +11,9 @@ const HeaderSection = () => {
         <div className='flex justify-between items-center py-[50px]   '>
             {/* logo */}
             <div className='flex items-center cursor-pointer justify-cente pb-1 '>
-                <img src="/images/logo.png" alt="logo" />
+                <Link to="/">
+                    <img src="/images/logo.png" alt="logo" />
+                </Link>
             </div>
 
             {/* navbar */}
