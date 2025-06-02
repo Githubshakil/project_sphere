@@ -3,7 +3,7 @@ import Container from '../commonLayOut/Container'
 import { Link } from 'react-router-dom'
 import Phone from '../../icons/Phone'
 import Mail from '../../icons/Mail'
-import logo from '../../../public/images/logo.png'
+import logo from '../../assets/logo.png'
 
 const Footer = () => {
   return (
