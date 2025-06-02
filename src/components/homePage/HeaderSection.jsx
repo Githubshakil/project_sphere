@@ -12,7 +12,7 @@ const HeaderSection = () => {
             {/* logo */}
             <div className='flex items-center cursor-pointer justify-cente pb-1 '>
                 <Link to="/">
-                    <img src="/images/logo.png" alt="logo" />
+                    <img src="images/logo.png" alt="logo" />
                 </Link>
             </div>
 
