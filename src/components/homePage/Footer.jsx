@@ -3,6 +3,7 @@ import Container from '../commonLayOut/Container'
 import { Link } from 'react-router-dom'
 import Phone from '../../icons/Phone'
 import Mail from '../../icons/Mail'
+import logo from '../../../public/images/logo.png'
 
 const Footer = () => {
   return (
@@ -10,7 +11,7 @@ const Footer = () => {
         <div className=' flex  mb-[500px] gap-[147px]'>
             <div className='mt-4'>
                 <Link to="/" >
-                <img src="images/logo.png" alt="" />
+                <img src={logo} alt="" />
                 </Link>
                 <p className='text-[#000] font-["Montserrat"] text-[18px] font-normal leading-[155%] mt-[57px] w-[381px]'>Lorem ipsum dolor sit amet consectetur. Eleifend nec morbi tellus vitae leo nunc.</p>
             </div>
