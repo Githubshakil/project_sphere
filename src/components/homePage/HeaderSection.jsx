@@ -3,6 +3,7 @@ import Container from '../commonLayOut/Container'
 import Button from '../commonLayOut/Button'
 import ArrowRight from '../../icons/ArrowDown'
 import { Link } from 'react-router-dom'
+import  logo  from '../../assets/logo.png'
 
 const HeaderSection = () => {
   return (
@@ -12,7 +13,7 @@ const HeaderSection = () => {
             {/* logo */}
             <div className='flex items-center cursor-pointer justify-cente pb-1 '>
                 <Link to="/">
-                    <img src="./images/logo.png" alt="logo" />
+                    <img src={logo} alt="logo" />
                 </Link>
             </div>
 
