@@ -18,7 +18,7 @@ const GatwaySearch = () => {
                 <div className='w-[591px] h-[143px] bg-[#eff0f1] rounded-[15px] flex flex-col justify-center gap-[25px] px-[23px] pt-[34px] pb-[11px] ml-[49px]'>
                     <div className=' flex items-center gap-[21px] ml-3'>
                         <Search />
-                        <input type="text" placeholder='Search for electronic' className='text-[#01081a] font-["Montserrat"] text-[21px] font-light'/>
+                        <input type="text" placeholder='Search for electronic' className='text-[#01081a] font-["Montserrat"] text-[21px] font-light '/>
                     </div>
                         <button className='py-[13px] px-[243px] bg-[#ace238] rounded-[15px] text-[#000] font-["Montserrat"] text-[17px] font-medium cursor-pointer'>Search</button>
                 </div>
