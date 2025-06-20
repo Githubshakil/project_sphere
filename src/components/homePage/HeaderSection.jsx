@@ -20,17 +20,17 @@ const HeaderSection = () => {
             {/* navbar */}
             <div className='flex items-center justify-center '>
                 <ul className='flex gap-[25px] font-["Montserrat"]  text-[13px] font-semibold text-[#8E8E8E] uppercase '>
-                   <li className='p-4 leading-[130%] cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out'>Home</li>
-                   <li  className='p-4 leading-[130%] cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out'>Pricing</li>
-                   <li  className='p-4 leading-[130%] cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out'>Events</li>
-                   <li  className='p-4 leading-[130%] cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out'>Company</li>
+                   <li className='p-4 leading-[130%] cursor-pointer'>Home</li>
+                   <li  className='p-4 leading-[130%] cursor-pointer'>Pricing</li>
+                   <li  className='p-4 leading-[130%] cursor-pointer'>Events</li>
+                   <li  className='p-4 leading-[130%] cursor-pointer'>Company</li>
                 </ul>
             </div>
 
             {/* Login  */}
             <div>
                 <div className='flex items-center gap-6 '>
-                    <button className='font-["Montserrat"]  text-[13px] font-semibold text-[#8E8E8E] p-4 leading-[130%] cursor-pointer space-y-10 hover:scale-105 transition-all duration-300 ease-in-out'>LOGIN</button>
+                    <button className='font-["Montserrat"]  text-[13px] font-semibold text-[#8E8E8E] p-4 leading-[130%] cursor-pointer space-y-10 '>LOGIN</button>
                     <Button textbtn={"Sign Up Now"} />
                 </div>
             </div>
