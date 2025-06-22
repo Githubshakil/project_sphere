@@ -27,6 +27,7 @@ function PrevNextArrow(props){
 
 const ArrivalSection = () => {
   const [selectedIndex, setSelectedIndex] = useState(null)
+  
 
   var settings = {
     dots: false,
@@ -96,6 +97,7 @@ const ArrivalSection = () => {
                 }}
                 
                 />
+
               <div className=" w-[250px] absolute top-[17px] cursor-pointer">
                 {arrivalItems.map((item, index) => (
                   <ArrivalItems
