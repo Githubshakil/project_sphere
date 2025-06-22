@@ -6,6 +6,7 @@ import ArrivalItems from "../commonLayOut/ArrivalItems";
 import Container from "../commonLayOut/Container";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useState } from "react";
 
 
 function NextRightArrow(props){
@@ -25,6 +26,8 @@ function PrevNextArrow(props){
 
 
 const ArrivalSection = () => {
+  const [selectedIndex, setSelectedIndex] = useState(null)
+
   var settings = {
     dots: false,
     infinite: true,
@@ -36,6 +39,40 @@ const ArrivalSection = () => {
     autoplay: true,
     autoplaySpeed: 2500,
   };
+  // Define the items for ArrivalItems
+  const arrivalItems = [
+    {
+      arrivalText: "Computer & Laptop",
+      arrivalNumber: "15",
+      bg: "#1f2537",
+      color: "#fff",
+    },
+    {
+      arrivalText: "Mobile & Phone",
+      arrivalNumber: "35",
+      bg: "#AFE638",
+      color: "#000",
+    },
+    {
+      arrivalText: "Camera Imaging",
+      arrivalNumber: "10",
+      bg: "#5E1EE5",
+      color: "#fff",
+    },
+    {
+      arrivalText: "TV & Smart Box",
+      arrivalNumber: "8",
+      bg: "#F1F1F2",
+      color: "#000",
+    },
+    {
+      arrivalText: "Home Appliance",
+      arrivalNumber: "2",
+      bg: "#FFE921",
+      color: "#000",
+    },
+  ];
+
   return (
     <>
       <div className="mb-[84px]">
@@ -46,73 +83,60 @@ const ArrivalSection = () => {
                 New <span className="text-[#5E1EE5]">arrival</span> for you
               </h2>
             </div>
-            
           </div>
 
           <div className=" flex justify-between  gap-[76px]">
-            <div className="  mt-8 border-l border-[#E2E2E2] h-[308px]  relative before:content-[''] before:bg-[#5e1ee5] before:absolute before:w-[2px] before:h-[43px]  before:left-[0px] before:top-[70px]">
-              <div className=" w-[250px] absolute top-[17px]  ">
+            <div className="mt-8 border-l border-[#E2E2E2] h-[308px]  relative">
+             
+              <span
+                className="absolute left-0 w-[2px] bg-[#5e1ee5] transition-all duration-300"
+                style={{
+                  top: `${selectedIndex !== null ? 10 + selectedIndex * 62 : 10}px`,
+                  height: "43px",
+                }}
                 
+                />
+              <div className=" w-[250px] absolute top-[17px] cursor-pointer">
+                {arrivalItems.map((item, index) => (
                   <ArrivalItems
-                  arrivalText="Computer & Laptop"
-                  arrivalNumber="15"
-                  bg={"#1f2537"}
-                />
-                <ArrivalItems
-                  arrivalText="Mobile & Phone"
-                  arrivalNumber="35"
-                  bg={"#AFE638"}
-                  color={"#000"}
-                />
-                <ArrivalItems
-                  arrivalText="Camera Imaging"
-                  arrivalNumber="10"
-                  bg={"#5E1EE5"}
-                />
-                <ArrivalItems
-                  arrivalText="TV & Smart Box"
-                  arrivalNumber="8"
-                  bg={"#F1F1F2"}
-                  color={"#000"}
-                />
-                <ArrivalItems
-                  arrivalText="Home Appliance"
-                  arrivalNumber="2"
-                  bg={"#FFE921"}
-                  color={"#000"}
-                />
-                
+                    key={index}
+                    arrivalText={item.arrivalText}
+                    arrivalNumber={item.arrivalNumber}
+                    bg={selectedIndex === index ? "#5E1EE5" : item.bg}
+                    color={selectedIndex === index ? "#fff" : item.color}
+                    onClick={() => setSelectedIndex(index)}
+                  />
+                ))}
               </div>
             </div>
 
             <div className="w-[940px]  ">
               <Slider {...settings} >
                 <ArrivalBox
-                loveIcon={true}
-                extraRight={true}
-                arrivalItemName="Xiphone 14 Pro Maxe"
-                itemPrice={true}
-                arrivalItemPrice="175.00"
-                paraText={
-                  "Lorem ipsum dolor sit amet consectetur. Eleifend nec morbi tellus vitae leo nunc."
-                }
-                rating="5"
-                totalRating="(121)"
-                className={"mx-0  my-0.5"}
-              />
-              <ArrivalBox
-                loveIcon={true}
-                arrivalItemName="Xiphone 13"
-                itemPrice={true}
-                arrivalItemPrice="100.00"
-                paraText={
-                  "Lorem ipsum dolor sit amet consectetur. Eleifend nec morbi tellus vitae leo nunc."
-                }
-                rating="5"
-                totalRating="(89)"
-                className={" mx-0 my-0.5"}
-               
-              />
+                  loveIcon={true}
+                  extraRight={true}
+                  arrivalItemName="Xiphone 14 Pro Max"
+                  itemPrice={true}
+                  arrivalItemPrice="175.00"
+                  paraText={
+                    "Lorem ipsum dolor sit amet consectetur. Eleifend nec morbi tellus vitae leo nunc."
+                  }
+                  rating="5"
+                  totalRating="(121)"
+                  className={"mx-0  my-0.5"}
+                />
+                <ArrivalBox
+                  loveIcon={true}
+                  arrivalItemName="Xiphone 13"
+                  itemPrice={true}
+                  arrivalItemPrice="100.00"
+                  paraText={
+                    "Lorem ipsum dolor sit amet consectetur. Eleifend nec morbi tellus vitae leo nunc."
+                  }
+                  rating="5"
+                  totalRating="(89)"
+                  className={" mx-0 my-0.5"}
+                />
               </Slider>
             </div>
           </div>
