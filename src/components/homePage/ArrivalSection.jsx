@@ -2,7 +2,6 @@ import Slider from "react-slick";
 import ArrowLeft from "../../icons/ArrowLeft";
 import ArrowRight from "../../icons/ArrowRight";
 import ArrivalBox from "../commonLayOut/ArrivalBox";
-import ArrivalItems from "../commonLayOut/ArrivalItems";
 import Container from "../commonLayOut/Container";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
